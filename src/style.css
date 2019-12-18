@@ -63,6 +63,10 @@ a {
   padding: 35px 20px;
 }
 
+.homepage .movieBox {
+  margin: 0 7px;
+}
+
 .movieBoxImage {
   align-items: center;
   background-color: #1e1e1e;
@@ -193,6 +197,7 @@ a {
 }
 
 .storeLinks img {
+  cursor: pointer;
   height: 40px;
   margin-left: 20px;
 }
