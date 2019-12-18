@@ -36,10 +36,17 @@ class PopularMovies extends React.Component {
   }
 
   render(){
+    let classNames = `list content ${!this.state.movies || this.state.movies === 'error'? 'noGrid' : ''}`;
+    let type = 'Titles';
+    if (this.props.type === 'movie')
+      type = 'Movies';
+    if (this.props.type === 'series')
+      type = 'Series';
+
     return (
       <div>
-        <PopularBar type="Movies"/>
-        <div className="list content">{this.renderMovies()}</div>
+        <PopularBar type={type}/>
+        <div className={classNames}>{this.renderMovies()}</div>
       </div>
     );
   };

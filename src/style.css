@@ -107,6 +107,10 @@ a {
   padding: 35px 14px;
 }
 
+.list.noGrid {
+  display: block;
+}
+
 .movieBox {
   /* margin: 0 7px; */
   width: 134px;
@@ -213,6 +217,11 @@ a {
 
   .storeLinks {
     margin-top: 30px;
+  }
+
+  .storeLinks img {
+    margin-left: 0;
+    margin-right: 20px;
   }
 }
 
