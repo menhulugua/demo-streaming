@@ -1,18 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
-import Header from './Header';
-import Homepage from './Homepage';
-import PopularMovies from './PopularMovies';
-import Footer from './Footer';
-import './normalize.css';
-import './style.css';
+import Header from './Header.js';
+import Homepage from './Homepage.js';
+import PopularMovies from './PopularMovies.js';
+import Footer from './Footer.js';
+import './styles/normalize.css';
+import './styles/styles.scss';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <BrowserRouter onChange={this.onRouteChange}>
+        <HashRouter onChange={this.onRouteChange}>
           <Header />
           <Route path="/" exact component={Homepage} />
           <Route path="/popular-movies" render={() => <PopularMovies type="movie" />} />
@@ -23,7 +23,7 @@ class App extends React.Component {
           <Route path="/help" component={Homepage} />
           <Route path="/manage-account" component={Homepage} />
           <Footer />
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import PopularBar from './PopularBar';
+import PopularBar from './PopularBar.js';
 
 class PopularMovies extends React.Component {
   state = {movies: null};
   async componentDidMount() {
     try{
-      const response = await fetch(`${window.location.origin}/sample.json`);
+      const response = await fetch('https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json');
       const data = await response.json();
       let movies = data.entries.filter(movie => movie.releaseYear > 2010 && movie.programType === this.props.type).sort((a, b) => a.title.localeCompare(b.title)).slice(0, 21);
       this.setState({movies: movies});

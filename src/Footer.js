@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import appStoreImg from './images/app-store.svg';
+import playStoreImg from './images/play-store.svg';
+import windowsStoreImg from './images/windows-store.svg';
 
 const Footer = () => {
   return (
@@ -21,9 +24,9 @@ const Footer = () => {
             <div className="instagram"></div>
           </div>
           <div className="storeLinks">
-            <img src="app-store.svg" alt="app store"/>
-            <img src="play-store.svg" alt="play store"/>
-            <img src="windows-store.svg" alt="windows store"/>
+            <img src={appStoreImg} alt="app store"/>
+            <img src={playStoreImg} alt="play store"/>
+            <img src={windowsStoreImg} alt="windows store"/>
           </div>
         </div>
       </div>

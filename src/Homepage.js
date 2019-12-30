@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import PopularBar from './PopularBar';
+import PopularBar from './PopularBar.js';
 
 const Homepage = () => {
   return (

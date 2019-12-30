@@ -20,40 +20,40 @@ a {
   color: #fff;
   height: 60px;
   position: relative;
-}
 
-.header a {
-  color: #fff;
-}
+  a {
+    color: #fff;
+  }
 
-.header .content {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
+  .content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.headerTitle {
-  font-size: 32px;
-  line-height: 60px;
-}
+  .headerTitle {
+    font-size: 32px;
+    line-height: 60px;
+  }
 
-.headerButtons {
-  height: 35px;
-}
+  .headerButtons {
+    height: 35px;
 
-.headerButtons button {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  height: 35px;
-}
+    button {
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      height: 35px;
+    }
 
-.headerButtons button:last-of-type {
-  background: linear-gradient(#444 0%, #333 100%);
-  margin-left: 30px;
-  width: 150px;
+    button:last-of-type {
+      background: linear-gradient(#444 0%, #333 100%);
+      margin-left: 30px;
+      width: 150px;
+    }
+  }
 }
 
 /* content */
@@ -70,7 +70,7 @@ a {
 .movieBoxImage {
   align-items: center;
   background-color: #1e1e1e;
-  background-image: url('/placeholder.png');
+  background-image: url('../images/placeholder.png');
   background-position: -60px;
   background-repeat: no-repeat;
   display: flex;
@@ -171,33 +171,33 @@ a {
 }
 
 .facebook {
-  background-image: url('/facebook-white.svg');
+  background-image: url('../images/facebookwhite.svg');
   height: 32px;
   width: 18px;
 }
 
 .facebook:hover {
-  background-image: url('/facebook-blue.svg');
+  background-image: url('../images/facebookblue.svg');
 }
 
 .twitter {
-  background-image: url('/twitter-white.svg');
+  background-image: url('../images/twitterwhite.svg');
   height: 26px;
   width: 32px;
 }
 
 .twitter:hover {
-  background-image: url('/twitter-blue.svg');
+  background-image: url('../images/twitterblue.svg');
 }
 
 .instagram {
-  background-image: url('/instagram-white.svg');
+  background-image: url('../images/instagramwhite.svg');
   height: 32px;
   width: 32px;
 }
 
 .instagram:hover {
-  background-image: url('/instagram-blue.svg');
+  background-image: url('../images/instagramblue.svg');
 }
 
 .storeLinks img {
